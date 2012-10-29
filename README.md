@@ -4,11 +4,11 @@ RequireJS with Embedded JavaScript (ejs) templates.
 
 ## Versions
 
-rejs     : `v0.1`
+rejs     : `0.1`
 
 Dependencies:
 
-[ejs](https://github.com/visionmedia/ejs) 	 : `v0.7.2`  
+[ejs](https://github.com/visionmedia/ejs) 	 : `0.7.2`  
 [text](https://github.com/requirejs/text)	 : `2.0.3`
 
 
