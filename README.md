@@ -8,8 +8,9 @@ rejs     : `0.1`
 
 Dependencies:
 
-[ejs](https://github.com/visionmedia/ejs) 	 : `0.7.2`  
-[text](https://github.com/requirejs/text)	 : `2.0.3`
+ejs 	  : `0.7.2` ([github](https://github.com/visionmedia/ejs))
+requirejs : `2.1.1` ([github](https://github.com/jrburke/requirejs))
+text	  : `2.0.3` ([github](https://github.com/requirejs/text))
 
 
 ## Example
