@@ -19,10 +19,11 @@ In order to view the demos, you'll need to install bower and have bower install 
 
     $ (sudo) npm install -g bower
     $ bower install
+    $ npm install
+    $ npm start
 
-After the components are installed, open up the demos in your browser.
+Go to http://localhost:4567/demo/index.html in your browser.
 
 ## Tests
 
-    $ npm install
-    $ mocha
+Coming soon.
