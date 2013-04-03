@@ -1,7 +1,6 @@
-# RequireJS EJS Plug-in (rejs)
+# RequireJS EJS Plug-in
 
-RequireJS with Embedded JavaScript (ejs) templates. 
-Inspired by and borrowed some code from requirejs-hogan-plugin ([github](https://github.com/millermedeiros/requirejs-hogan-plugin)).
+Use EJS templates with RequireJS. 
 
 ## Versions
 
@@ -12,6 +11,10 @@ Dependencies (tested with, may work with newer versions):
 ejs 	  : `0.8.3` ([github](https://github.com/visionmedia/ejs))  
 requirejs : `2.1.5` ([github](https://github.com/jrburke/requirejs))  
 text	  : `2.0.5` ([github](https://github.com/requirejs/text))
+
+For Demo:
+
+bower     : `0.8.5` ([github](https://github.com/twitter/bower))
 
 ## Demos
 
@@ -27,3 +30,7 @@ Go to http://localhost:4567/demo/index.html in your browser.
 ## Tests
 
 Coming soon.
+
+## Inspiration
+
+Inspired by and borrowed code from requirejs-hogan-plugin ([github](https://github.com/millermedeiros/requirejs-hogan-plugin)).
