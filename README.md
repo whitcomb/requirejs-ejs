@@ -15,7 +15,7 @@ text	  : `2.0.5` ([github](https://github.com/requirejs/text))
 
 ## Demos
 
-In order to view the demos, you'll need to install bower and have bower install the componements.
+In order to view the demos, you'll need to install bower and have bower install the required libs.
 
     $ (sudo) npm install -g bower
     $ bower install
