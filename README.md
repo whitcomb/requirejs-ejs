@@ -27,6 +27,11 @@ In order to view the demos, you'll need to install bower and have bower install 
 
 Go to http://localhost:4567/demo/index.html in your browser.
 
+## TODO
+
++ (high priority) Add support for nested includes.
++ Add support for mixing in custom ejs filters.
+
 ## Tests
 
 Coming soon.
