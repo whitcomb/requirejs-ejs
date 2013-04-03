@@ -8,8 +8,7 @@ require([
 
     data = {
         one: "this is number one",
-        two: "this is number two",
-        three: "this is number three"
+        two: "this is number two"
     };
 
     document.querySelector('#example').innerHTML = tmplOne(data);
