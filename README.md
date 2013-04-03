@@ -1,27 +1,28 @@
-# RequireJS EJS Plug-in
+# RequireJS EJS Plug-in (rejs)
 
-RequireJS with Embedded JavaScript (ejs) templates. Inspired by and borrowed some code from requirejs-hogan-plugin ([github](https://github.com/millermedeiros/requirejs-hogan-plugin)).
+RequireJS with Embedded JavaScript (ejs) templates. 
+Inspired by and borrowed some code from requirejs-hogan-plugin ([github](https://github.com/millermedeiros/requirejs-hogan-plugin)).
 
 ## Versions
 
-rejs     : `0.1`
+rejs     : `0.3`
 
-Dependencies:
+Dependencies (tested with, may work with newer versions):
 
-ejs 	  : `0.7.2` ([github](https://github.com/visionmedia/ejs))  
-requirejs : `2.1.1` ([github](https://github.com/jrburke/requirejs))  
-text	  : `2.0.3` ([github](https://github.com/requirejs/text))
+ejs 	  : `0.8.3` ([github](https://github.com/visionmedia/ejs))  
+requirejs : `2.1.5` ([github](https://github.com/jrburke/requirejs))  
+text	  : `2.0.5` ([github](https://github.com/requirejs/text))
 
-## Example
+## Demos
 
-See the demo directory for a simple example.
+In order to view the demos, you'll need to install bower and have bower install the componements.
 
-## License
+    $ (sudo) npm install -g bower
+    $ bower install
 
-Copyright (C) 2012 Brad Whitcomb
+After the components are installed, open up the demos in your browser.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+## Tests
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+    $ npm install
+    $ mocha
