@@ -26,11 +26,25 @@ define(["text", "ejs"], function (text, ejs) {
   // This is written to the output file during optimizations.
   buildTemplate = 'define("<%= plugin %>!<%= module %>", ["ejs"], function(e) { return e.compile(<%- template %>); }); \n';
 
-  // Loops over every include statment and replaces 
+  function injectIncludesRecurse(req, template, callback, self) {
+
+    function done (template) {
+      if (template.match(includeRegex)) {
+        return exec(template, done);
+      }
+      callback(template);
+    }
+
+    function exec (template, done) {
+      injectIncludes(req, template, done, self);
+    }
+    exec(template, done);
+  }
+
+  // Loops over every include statment and replaces
   // the include with the template.
   // TODO: Add error handling for incorrect paths or missing templates.
   function injectIncludes(req, template, callback, self) {
-
     var matches,
       match,
       index;
@@ -87,7 +101,7 @@ define(["text", "ejs"], function (text, ejs) {
       var url;
       url = req.toUrl(name + "." + extension);
       text.get(url, function(template) {
-        injectIncludes(req, template, function (processedTemplate) {
+        injectIncludesRecurse(req, template, function (processedTemplate) {
           if (config.isBuild) {
             buildMap[name] = JSON.stringify(processedTemplate);
           }
